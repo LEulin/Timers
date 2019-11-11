@@ -95,14 +95,14 @@ public class Timers extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        CountUp.setBackground(new java.awt.Color(255, 153, 153));
+        CountUp.setBackground(new java.awt.Color(0, 255, 0));
+        CountUp.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
         CountUp.setFocusCycleRoot(true);
 
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
         jLabel4.setText("COUNT UP");
 
         countup.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 48)); // NOI18N
-        countup.setForeground(new java.awt.Color(255, 255, 255));
         countup.setText("0");
 
         startBtnCounterUp.setText("START");
@@ -131,27 +131,26 @@ public class Timers extends javax.swing.JFrame {
         CountUpLayout.setHorizontalGroup(
             CountUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CountUpLayout.createSequentialGroup()
-                .addContainerGap(38, Short.MAX_VALUE)
+                .addGap(29, 29, 29)
                 .addComponent(startBtnCounterUp)
-                .addGap(18, 18, 18)
-                .addGroup(CountUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addGroup(CountUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel4)
-                    .addGroup(CountUpLayout.createSequentialGroup()
-                        .addGroup(CountUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(countup, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(stopBtnCounterUp, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addComponent(resetBtnCounterUp)))
-                .addGap(32, 32, 32))
+                    .addGroup(CountUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(stopBtnCounterUp)
+                        .addComponent(countup, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(17, 17, 17)
+                .addComponent(resetBtnCounterUp)
+                .addGap(29, 29, 29))
         );
         CountUpLayout.setVerticalGroup(
             CountUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CountUpLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(34, 34, 34)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(60, 60, 60)
                 .addComponent(countup, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(62, 62, 62)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
                 .addGroup(CountUpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(startBtnCounterUp)
                     .addComponent(stopBtnCounterUp)
@@ -159,9 +158,10 @@ public class Timers extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
-        CurrentTime.setBackground(new java.awt.Color(0, 153, 153));
+        CurrentTime.setBackground(new java.awt.Color(0, 153, 255));
+        CurrentTime.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
 
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
         jLabel2.setText("CURRENT TIME");
 
         GetCurrentTime.setText("GET TIME");
@@ -171,8 +171,7 @@ public class Timers extends javax.swing.JFrame {
             }
         });
 
-        testCurrentTime.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        testCurrentTime.setForeground(new java.awt.Color(255, 255, 255));
+        testCurrentTime.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
         testCurrentTime.setText("0000-00-00 00:00:00");
 
         javax.swing.GroupLayout CurrentTimeLayout = new javax.swing.GroupLayout(CurrentTime);
@@ -180,35 +179,35 @@ public class Timers extends javax.swing.JFrame {
         CurrentTimeLayout.setHorizontalGroup(
             CurrentTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CurrentTimeLayout.createSequentialGroup()
+                .addGap(92, 92, 92)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CurrentTimeLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(CurrentTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(CurrentTimeLayout.createSequentialGroup()
-                        .addGroup(CurrentTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(CurrentTimeLayout.createSequentialGroup()
-                                .addGap(104, 104, 104)
-                                .addComponent(jLabel2))
-                            .addGroup(CurrentTimeLayout.createSequentialGroup()
-                                .addGap(110, 110, 110)
-                                .addComponent(GetCurrentTime)))
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CurrentTimeLayout.createSequentialGroup()
-                        .addGap(0, 29, Short.MAX_VALUE)
-                        .addComponent(testCurrentTime, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .addComponent(testCurrentTime, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CurrentTimeLayout.createSequentialGroup()
+                        .addComponent(GetCurrentTime)
+                        .addGap(111, 111, 111))))
         );
         CurrentTimeLayout.setVerticalGroup(
             CurrentTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CurrentTimeLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addGap(23, 23, 23)
                 .addComponent(jLabel2)
-                .addGap(63, 63, 63)
+                .addGap(64, 64, 64)
                 .addComponent(testCurrentTime, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-                .addGap(59, 59, 59)
+                .addGap(57, 57, 57)
                 .addComponent(GetCurrentTime)
-                .addGap(28, 28, 28))
+                .addGap(30, 30, 30))
         );
 
-        CountDown.setBackground(new java.awt.Color(204, 204, 0));
+        CountDown.setBackground(new java.awt.Color(255, 0, 0));
+        CountDown.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
 
+        jLabel3.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
         jLabel3.setText("COUNT DOWN");
 
         startBtnCounterDown.setText("START");
@@ -240,29 +239,32 @@ public class Timers extends javax.swing.JFrame {
         CountDownLayout.setHorizontalGroup(
             CountDownLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CountDownLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(CountDownLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(countdown, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(CountDownLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(countdown, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(CountDownLayout.createSequentialGroup()
+                        .addGap(36, 36, 36)
                         .addComponent(startBtnCounterDown)
-                        .addGap(18, 18, 18)
-                        .addGroup(CountDownLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addGroup(CountDownLayout.createSequentialGroup()
-                                .addComponent(stopBtnCounterDown)
-                                .addGap(4, 4, 4)))))
-                .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(stopBtnCounterDown)
+                        .addGap(18, 18, 18)))
+                .addGap(22, 22, 22)
                 .addComponent(resetBtnCounterDown)
                 .addGap(34, 34, 34))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CountDownLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(112, 112, 112))
         );
         CountDownLayout.setVerticalGroup(
             CountDownLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CountDownLayout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(35, 35, 35)
                 .addComponent(jLabel3)
-                .addGap(61, 61, 61)
+                .addGap(51, 51, 51)
                 .addComponent(countdown, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(CountDownLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(startBtnCounterDown)
                     .addComponent(stopBtnCounterDown)
@@ -270,8 +272,10 @@ public class Timers extends javax.swing.JFrame {
                 .addGap(22, 22, 22))
         );
 
-        StopWatch.setBackground(new java.awt.Color(100, 240, 240));
+        StopWatch.setBackground(new java.awt.Color(255, 255, 0));
+        StopWatch.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
 
+        jLabel1.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
         jLabel1.setText("STOPWATCH");
 
         startBtnStopWatch.setText("START");
@@ -299,41 +303,43 @@ public class Timers extends javax.swing.JFrame {
         hourStopWatch.setText(" 00");
 
         secondStopWatch.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 45)); // NOI18N
-        secondStopWatch.setText(":  00");
+        secondStopWatch.setText(": 00");
 
         minuteStopWatch.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 45)); // NOI18N
-        minuteStopWatch.setText(":  00");
+        minuteStopWatch.setText(": 00");
 
         javax.swing.GroupLayout StopWatchLayout = new javax.swing.GroupLayout(StopWatch);
         StopWatch.setLayout(StopWatchLayout);
         StopWatchLayout.setHorizontalGroup(
             StopWatchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(StopWatchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(StopWatchLayout.createSequentialGroup()
-                    .addGap(33, 33, 33)
-                    .addComponent(startBtnStopWatch)
-                    .addGap(18, 18, 18)
-                    .addComponent(stopBtnStopWatch)
-                    .addGap(18, 18, 18)
-                    .addComponent(resetBtnStopWatch)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(StopWatchLayout.createSequentialGroup()
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(hourStopWatch, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(minuteStopWatch, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(secondStopWatch, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap()))
             .addGroup(StopWatchLayout.createSequentialGroup()
-                .addGap(108, 108, 108)
-                .addComponent(jLabel1)
-                .addGap(19, 19, 19))
+                .addGap(33, 33, 33)
+                .addComponent(startBtnStopWatch)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, StopWatchLayout.createSequentialGroup()
+                .addContainerGap(27, Short.MAX_VALUE)
+                .addComponent(hourStopWatch, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(StopWatchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, StopWatchLayout.createSequentialGroup()
+                        .addComponent(minuteStopWatch, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(secondStopWatch, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32))
+                    .addGroup(StopWatchLayout.createSequentialGroup()
+                        .addGroup(StopWatchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(StopWatchLayout.createSequentialGroup()
+                                .addGap(37, 37, 37)
+                                .addComponent(stopBtnStopWatch)
+                                .addGap(31, 31, 31)
+                                .addComponent(resetBtnStopWatch)))
+                        .addGap(44, 44, 44))))
         );
         StopWatchLayout.setVerticalGroup(
             StopWatchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(StopWatchLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addGap(21, 21, 21)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(StopWatchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -358,10 +364,10 @@ public class Timers extends javax.swing.JFrame {
                     .addComponent(CountDown, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(StopWatch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(CountUp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CurrentTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(CountUp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(CurrentTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -370,7 +376,7 @@ public class Timers extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(CurrentTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(StopWatch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(CountUp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(CountDown, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -422,6 +428,7 @@ public class Timers extends javax.swing.JFrame {
 
     private void resetBtnStopWatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetBtnStopWatchActionPerformed
         stateStopWatch = false;
+        StopWatch.setBackground(Color.yellow);
 
         seconds = 0;
         minutes = 0;
@@ -445,7 +452,7 @@ public class Timers extends javax.swing.JFrame {
                             if (secondsCountDown != 0) {;
                                 secondsCountDown--;
                             } else if (secondsCountDown == 0) {
-                                CountDown.setBackground(Color.white);
+                                CountDown.setBackground(Color.pink);
                             }
                             countdown.setText(" " + secondsCountDown);
 
@@ -473,7 +480,7 @@ public class Timers extends javax.swing.JFrame {
                             sleep(1000);
                            secondsCountUp++;
                            if(secondsCountUp == 11){
-                               CountUp.setBackground(Color.black);
+                               CountUp.setBackground(Color.ORANGE);
                                break;
                            }                          
                             countup.setText(" " + secondsCountUp);
@@ -515,18 +522,22 @@ public class Timers extends javax.swing.JFrame {
 
     private void resetBtnCounterDownActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetBtnCounterDownActionPerformed
         stateCountDown = false;
+        CountDown.setBackground(Color.red);
         secondsCountDown = 10; 
         countdown.setText(" " + secondsCountDown);
     }//GEN-LAST:event_resetBtnCounterDownActionPerformed
 
     private void stopBtnCounterUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stopBtnCounterUpActionPerformed
         stateCountUp = false;
+        
     }//GEN-LAST:event_stopBtnCounterUpActionPerformed
 
     private void resetBtnCounterUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetBtnCounterUpActionPerformed
         stateCountUp = false;
+        CountUp.setBackground(Color.green);
         secondsCountUp = 0; 
         countup.setText(" " + secondsCountUp);
+        
         
     }//GEN-LAST:event_resetBtnCounterUpActionPerformed
 
